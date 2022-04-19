@@ -1,0 +1,147 @@
+The ML Project Life Cycle:
+
+    Steps:
+
+                                                                            What to do
+        Scoping             Define Project                              . Decide to work on computer 
+          |                     |                                         vision for object detection
+          |                     |                                       . Decide on key metrics    
+          |                     |                                           accuracy , latency, throughput
+          |                     |                                       . Estimate resources and time line
+          |                     |
+          |                     |
+          V                     V
+        Data                Define Data and Establish Base Line         . Is the data labeled consistantly?     
+          |                     |                                        
+          |                     |
+          |                     V
+          |                 Label and Organize the Data    
+          |                     |
+          V                     V
+        Modelling           Select and train Model                      . Code(Algorithm/Model)
+          |                     |                                       . Hyper Parameters
+          |                     |                                       . Data
+          V                     V
+        Deployment          Deploy in Production                        . Detection API
+                                |                                       . Prediction Server
+                                |
+                            Monitor and maintain system                 . Calculate the metrics
+                                                                        . Find Concept and Data Drift
+                                                                          and find ways to fix it
+
+
+Main Scope of the Learning:
+
+1.  Deployment
+2.  Modelling
+3.  Data
+4.  Scoping
+
+
+1. Deployment:
+
+        The main challenges of Deployment is Concept Drift and Data Drift
+
+        Its means what if the data changes if the model has already been deployed.
+
+        If you trained you model with old data but there are more patterns in the new data
+        which the model could not capture earlier.
+
+        When the data changes 
+                    It can be gradual change but changes very slowly.
+             or     It can be rapid which can be sudden shock to the model or system
+
+
+        Data Drift                  happens when data changes
+        Concept Drift/Model drift   happens when parameters change
+
+
+        Other challenges are software engineering issues:
+
+            Check list of questions:
+
+                . Realtime or Batch
+                . Cloud Vs Edge/Browser
+                . compute resources (cpu/gpu/memory)
+                . Latency, Throughput (How many queries per second (QPS))
+                . Logging
+                . Security and Privacy
+        
+
+    Common Deployment Cases:
+
+        1.  New Product/Capability
+        2.  Automate/assist with manual task
+        3.  Replace previous ML system
+
+        Key Ideas:
+            
+            .   Gradual ramp up with Monitoring
+            .   RollBack
+        
+    Deployment Types:
+
+        1.  Shadow mode Deployment
+        2.  Canary Deployment
+
+        3.  Blue green Deployment 
+            In this, the prediction is made by both older and newer versions of the model
+            But, prediction service is rapidly moved to new or green version.
+            
+            It is an easy way to RollBack
+
+    Degree of automation:
+
+        Human only ---> Shadow Mode ---> AI assistance ---> Partial automation --> Full automation
+
+        AI assistance and Partial automation are the human in the loop automation.
+
+
+
+    Monitoring The models:
+
+
+        . Brainstorm the things that can go wrong
+        . Brainstorm the metrics/statistics that can detect the problem
+
+        some examples of metrics to track:
+            
+            software metrics:
+                Memory, Compute, Latency, Throughput, Server Load
+            
+            Input metrics:
+
+                Average Input Length
+                Average Input Volume
+                Number of missing values
+                Average image brightness
+            
+            Output metrics:
+                    the following are in the case speech recognition model
+
+                # of times returns " "(Null)  when searched
+                # times user redoes search
+                # times user switches to typing (because he frustrated with voice search)
+
+
+2. Modelling:
+
+    
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+

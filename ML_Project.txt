@@ -1,0 +1,100 @@
+
+1.  HLD / High level Detail
+2.  LLD / Low level Detail
+3.  Architecture
+4.  Wire Frame
+5.  KPI
+6.  Pipe Line
+7.  Coding
+8.  Audit
+9.  Production
+10. Hyper Care
+
+
+
+1.  Requirement Gathering
+2.  Requirement Analysis
+
+
+1.  HLD
+
+        1.  Low Level Requirement Gathering
+                                                            *--->SQL
+        2.  Business Understanding     done through  Data  *---->NOSQL
+                                                            *--->S3
+                                                             *-->Blob
+        
+                        ***     Batch
+        3.  Frequency  ******   Mini Batch
+                        ***     Streaming
+        
+
+        4.  No of Files
+
+
+        5.  Data Description
+
+        6.  Diagram of Complete Existing Infrastructure
+
+
+                                        
+
+2.  LLD:
+
+                SQL -------------->   *
+                                       *
+                NOSQL ------------->    * ****> EC2  ****> Data Validation *************> 
+                                       *                1.  File Name Check             *   
+                SERVER ------------>  *                 2.  Extension Check             *  
+                                     *                  3.  No of Columns Check         *   
+                Streaming --------> *                   4.  Type of Feature Check       *
+                                                        5.  Name of column Check        *
+                                                        6.  Null Check                  *                                      
+                                                                                        *
+                *************************************************************************
+                *
+                *
+            Data Transormation                      
+                1.   Data Time
+                2.   Categorical Transformation 
+                *
+                *
+            Data Aggregation
+                *
+                *
+            Data Pre-processing
+                *
+                *
+            Clustering
+                *
+                *
+            Build Model System
+                *
+                *
+            Test Model
+                *
+                *
+            Serve Model
+                *
+                *
+            Monitoring
+                *
+                *
+            Model Retraining
+                *
+                *
+            Model Redeploymrnt
+            
+
+
+
+
+
+        
+        Data Sharing Agreement :
+
+        1.  No of Files
+        2.  Mode of Data Transfer
+        3.  Feature Details
+        4.  Language
+

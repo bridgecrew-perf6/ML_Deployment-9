@@ -1,0 +1,98 @@
+
+Data in production Machine learning Environment:
+
+
+    Collecting, Labeling, and Validating the Data:
+
+
+    Traditional ML modelling requires:
+
+        Data --> training --> Evaluation
+
+    Production ML systems require much more:
+
+        Configuration
+            Data Collection
+                Data Verification
+                    feature Extraction
+                        ML Code
+                            Machine resource Mgmt
+                                Analysis Tools
+                                    Process management Tools
+                                        Serving infrastructure
+                                            Monitoring
+    
+
+    ML modelling Vs Production ML:
+
+                           Academic/Research ML         |   Production ML
+    Data                   Static                       |   Dynamic-shifting
+    Priority for Design    Highest overall accuracy     |   Fast inference, good interpretability              
+    Model training         Optimal tuning and Training  |   Continuously assess and retrain
+    Fairness               Very Important               |   Crucial
+
+
+
+    Modern software development accounts for 
+
+    >   Scalability
+    >   Extensibility
+    >   Configuration
+    >   Consistancy & Reproducability
+    >   Safety & Security
+    >   Modularity
+    >   Testability
+    >   Monitoring
+    >   Best Practices
+
+
+        Production ML System:
+
+
+                                        |------------|
+                                        |            |
+                                        V            |
+            Scoping --> Data --->  Modelling ---> Deployment
+                A        A          |                  |
+                |        |----------|                  |  New Data
+                |                                      |
+                |--------------------------------------|
+
+
+        Challenges in production ML:
+
+            1.  Build integrated systems
+            2.  Continuously operate it in production
+            3.  Optimize compute resource Cost 
+
+Collecting Data:
+
+    Main points are:
+        Importance of Data Quality
+        Data Pipeline:  Data Collection, Ingestion, and Preparation
+        Data Collection and Monitoring 
+    
+
+        f(Garbage Data) = Garbage Data
+            if input is garbage then output is also garbage
+        
+        Data Pipeline:
+
+            Data Collection
+            Data Ingestion
+            Data Formatting
+            Feature Engineering
+            Feature Extraction
+        
+
+        Get to know about the data:
+
+            Indentify Data Sources
+            Check if they are refreshed
+            Consistancy for Values,units and Data Types
+            Monitor Outliers and Errors
+
+        
+
+
+    
